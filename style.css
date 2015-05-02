@@ -1,0 +1,136 @@
+/* 
+  RESET v1.0 
+*/ 
+html, body, div, span, applet, object, iframe, 
+h1, 
+h2, 
+#contact h3, h2, h3, h4, h5, h6, p, blockquote, pre, 
+a, abbr, acronym, address, big, cite, code, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, 
+small, strike, strong, sub, sup, tt, var, 
+b, u, i, center, 
+dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend,
+ 
+table,  tfoot, tbody, thead, tr, th, td { 
+  
+  margin: 8px; 
+  border: 1px solid black;
+  padding: 5px; 
+  font-size: 100%; 
+  vertical-align: middle;
+  background: transparent; 
+  border-color:transparent; 
+  border-collapse: collapse; 
+  border-spacing: 30px;
+  text-align: center;
+} 
+
+
+
+h3{
+	color: #0099CC;
+	padding-bottom: 0px;
+	font-size:28px;  
+}
+
+h2{
+	color: #0099CC;
+	padding-bottom: 0px;
+	font-size: 22px; 
+	text-align:center; 
+}
+
+a{
+  text-align: center;	
+  line-height: normal;
+  color: #000000; 
+}
+
+
+ 
+ul { 
+  list-style-type: none; 
+} 
+ 
+body { 
+	text-align: center;
+  line-height: normal; 
+} 
+
+ 
+blockquote, q { 
+  quotes: none; 
+} 
+ 
+blockquote:before, blockquote:after, 
+q:before, q:after { 
+  content: ''; 
+  content: none; 
+} 
+ 
+:focus { 
+  outline: 0; 
+} 
+ 
+ins { 
+  text-decoration: none; 
+} 
+ 
+del { 
+  text-decoration: line-through; 
+} 
+ 
+
+/*html5 display rule*/ 
+address, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, nav, menu, nav, section, summary { 
+  display: block; 
+} 
+ 
+/*
+    Start here 
+*/ 
+.wrapper { 
+    width:700px; 
+    margin:10px;
+    onclick: 12px; 
+    margin-left: 5px;}
+    
+nav{ width: relative;
+	 display: inline-block;
+	 text-decoration: none;
+	 color: #DCDCDC;
+	 margin-left: 15px;
+    padding:5px;
+    padding-bottom: 50px;
+    font-size: 19px;
+    text-align:center; 
+} 
+nav li {
+	text-decoration:none; 
+    display: inline; 
+} 
+
+section{
+	align-items: flex-end;
+}
+
+p {     
+    text-align: justify;
+    padding-left: 200px;
+    padding-top: 2px;
+    padding-right: 200px;
+} 
+
+aside{ 
+display: inline-table;
+display: table-row-group;
+text-align: center;
+
+}
+
+footer {
+    border-color:black;
+    padding-top:70px; 
+    text-align:center; 
+}{ margin-right: 10px;} 

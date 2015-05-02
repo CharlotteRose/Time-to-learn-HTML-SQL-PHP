@@ -24,28 +24,36 @@ require_once('sportsfanConnect.php');?>
 	     <li><a href="sales.php">Sales Records</a></li>
 	     <li><a href="customers.php">Customer Records</a></li>	     
 	   </nav>
-	   
+c
+		<?php
+			if (!empty($_POST["cc"] && $_POST["name"] && $_POST["quantity"] && $_POST["wPrice"]&& $_POST["rPrice"]&& $_POST["sID"]))
+			{
+				$sql = "INSERT INTO items (ID, ItemName, Quantity, Wholesale_Price, Retail_Price, Supplier)
+							VALUES (
+										\"{$_POST["cc"]}\", 
+										\"{$_POST["name"]}\",	
+										\"{$_POST["quantity"]}\",
+										\"{$_POST["wPrice"]}\",
+										\"{$_POST["rPrice"]}\",
+										\"{$_POST["sID"]}\"
+										)";
+										
+				$result = $conn->query($sql);	
+						
+			}else{
+			echo "Please try again later."; }								
+		?>
+
 <br>			   	         
-	<main> <br>	
+	<main> <br>	<br><br><br>
 		<body>
-		  <h3> Welcome to The SportsFan management site. </h3> 
-		  <p>
-		  <aside><p> If you are new to our system please take a moment to familiarize yourself with out content and layout. 
-		  	   To explore the site just click on the titles below the banner at the top of the page. If ever you think you have gone to far
-		  	   you can return to this page by selecting the 'Home' title.</aside>
-		  	   </p>
-		  	   <h3> What are your options?</h3>
-		  	   <p>
-		  	   Each page is equipped to bring you fast and efficient service. Simply navigate to the page with the information you 
-		  	   are watning to search through. The drop down box on the pages offers the ability to <b>'List All'</b>, <b>'Add'</b>, <b>'Edit'</b> and <b>'Search'</b>.
-		  	   These choices can return something as simple as a Customer name or as much as a list of every Sales transaction to date. 
-		  	   </p>
-		  	   </aside>		  
+		  <h2> Your record has been successfully added to the database.  </h3> 		  
 		</body>
 	</main> 					
 </form>     
-<br>           
-	        <footer>                
+<br> 
+
+    <footer>                
 	            Copyright © TheSportsFan.com
 	        </footer>	         
 	           <i> Need Help? Find us on<a href="url here">ScootsSoltuions.com </a> </i>         
